@@ -1,20 +1,16 @@
+import java.util.Scanner;
 public class U2L2Runner {
-
     public static void main(String[] args) {
-        Rectangle rect = new Rectangle(150, 200);
-        rect.setWidth(125);
-        System.out.println("The parameter for this rectangle is " + rect.parameters()+ ".");
-        rect.printRectangleInfo();
+        Scanner construction = new Scanner(System.in);
+        System.out.println("Number of lumber boards needed: ");
+        int boardNum = construction.nextInt();
 
-        Rectangle rect1 = new Rectangle(100);
-        rect1.setWidth(125);
-        System.out.println("The parameter for this rectangle is " + rect1.parameters()+ ".");
-        rect1.printRectangleInfo();
+        System.out.println("Number of windows needed: ");
+        int windowNum = construction.nextInt();
 
-        Rectangle rect2 = new Rectangle();
-        rect2.setWidth(125);
-        System.out.println("The parameter for this rectangle is " + rect2.parameters()+ ".");
-        rect2.printRectangleInfo();
+        System.out.println("Tax rate in your area: ");
+        double taxEvasion = construction.nextDouble();
+
 
     }
 }
