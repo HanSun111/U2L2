@@ -79,6 +79,7 @@ public class Rectangle {
     public void printRectangleInfo()
     {
         System.out.println("This rectangle's length is " + length + " and width is " + width + ".");
+        System.out.println("Area is " + calculateArea() + ".");
 
     }
 
