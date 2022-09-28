@@ -12,8 +12,8 @@ public class U2L2Runner {
         double taxEvasion = construction.nextDouble();
 
         ConstructionPricer price = new ConstructionPricer(5.53 , 50.59 , taxEvasion);
-        System.out.println("Material cost: " + price.materialsCost(boardNum , windowNum));
-        System.out.println("Total cost with taxes because taxes are cool: " + price.totalWithTax(price.materialsCost(boardNum , windowNum)));
+        System.out.println("Material cost: " + String.format("%.2f", price.materialsCost(boardNum , windowNum)));
+        System.out.println("Total cost with taxes because taxes are cool: " + String.format("%.2f", price.totalWithTax(price.materialsCost(boardNum , windowNum))));
 
 
     }
